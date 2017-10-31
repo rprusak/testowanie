@@ -58,4 +58,20 @@ Następnie możemy uruchomić aplikację za pomocą polecenia:
 ./w3af_console
 ```
 
-Na chwilę obecną nie udało odpalić się gui, ponieważ paczka _webkit_ została usunięta z repozytorium systemowego.
+Aby skorzystać z interfejsu gui, należy wykonać dodatkowe polecenia:
+
+```
+sudo apt-get install graphviz
+sudo pip install xdot==0.6
+sudo apt-get install python-gtk2*
+sudo apt-get install --fix-broken libjavascriptcoregtk-1.0-0 libpango1.0-0 libwebkitgtk-1.0-0
+wget http://ftp.cn.debian.org/debian/pool/main/p/python-support/python-support_1.0.15_all.deb
+sudo dpkg -i python-support_1.0.15_all.deb
+wget http://ftp.cn.debian.org/debian/pool/main/p/pywebkitgtk/python-webkit_1.1.8-3_amd64.deb
+sudo dpkg -i python-webkit_1.1.8-3_amd64.deb
+```
+
+Interfejs gui możemy uruchomić za pomocą polecenia:
+```
+./w3af_gui 
+```
