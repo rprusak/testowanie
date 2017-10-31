@@ -75,3 +75,40 @@ Interfejs gui możemy uruchomić za pomocą polecenia:
 ```
 ./w3af_gui 
 ```
+
+## Instalacja testowanych aplikacji
+
+### Inventory Manager
+
+W celu instalacji aplikacji musimy wykonać następujące polecenia:
+```
+sudo apt install mysql-server mysql-client
+sudo apt-get install apache
+sudo ufw allow 'Apache Full'
+wget https://cdn.bigprof.com/appgini-open-source-apps/online-inventory-manager-3.1.zip
+unzip online-inventory-manager-3.1.zip
+sudo cp -r inventory /var/www/html/
+sudo chmod -r 777 /var/www/html/inventory
+sudo apt-get install libapache2-mod-php7.0 php7.0-mbstring php7.0-mysql php7.0-gd
+sudo service apache2 restart
+```
+Teraz musimy otworzyć w przeglądarce adres:
+```
+http://localhost/inventory/
+```
+
+Aplikacja przeprowadzi nas przez proces konfiguracji.
+
+### Doku Wiki
+
+W celu instalacji aplikacji musimy wykonać następujące polecenia:
+```
+wget https://download.dokuwiki.org/out/dokuwiki-c5525093cf2c4f47e2e5d2439fe13964.tgz
+tar zxvf dokuwiki-c5525093cf2c4f47e2e5d2439fe13964.tgz
+sudo cp -r dokuwiki /var/www/html
+sudo chmod -r 777 /var/www/html/dokuwiki
+```
+Teraz musimy otworzyć w przeglądarce adres:
+```
+http://localhost/dokuwiki/
+```
