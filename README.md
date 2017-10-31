@@ -112,3 +112,11 @@ Teraz musimy otworzyć w przeglądarce adres:
 ```
 http://localhost/dokuwiki/
 ```
+
+## Uruchomienie przykładowego testu
+
+Sprawdzenie aplikacji pod kątem 10 najpoważniejszych podatności:
+![enter image description here](https://i.imgur.com/j11cjbj.png)
+
+Wyniki testów:
+![enter image description here](https://i.imgur.com/qdJjCuk.png)
