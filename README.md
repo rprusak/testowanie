@@ -1,10 +1,12 @@
 # Testowanie
 
 ## Opis środowiska testowego W3AF
-###Ogólny opis funkcjonalności
+### Ogólny opis funkcjonalności
+
 W3AF (web application attack and audit framework) jest to open-source'owa aplikacja służąca do testowania bezpieczeństwa aplikacji webowych. Została zaimplementowana w języku python. Oprogramowanie to ma za zadanie umożliwiać zidentyfikowanie i wychwycenie luk bezpieczeństwa w aplikacji webowych, poprzez wysyłanie do niej zainfekowanych zapytań HTTP.  Oprogramowanie jest w stanie przetestować aplikację pod względem ponad 200 najpopularniejszych podatności. Przed uruchomieniem testów, użytkownik powienien znać zarys sposobu działania testowanej aplikacji.
 
-###Wersje darmowe/płatne
+### Wersje darmowe/płatne
+
 W3AF jest rozpowszechniany w wersji darmowej na licencji GPLv2.0.
 
 ### Sposoby przygotowania testów
@@ -16,8 +18,6 @@ Aplikacja wykonuje testy penetracyjne składające się z trzech etapów, za ka�
    zabezpieczeniach
  -  **attack**: jako wejście otrzymują luki w zabezpieczeniach znalezione przez audit. Mają na celu maksymalnie wykorzystać potencjalne dziury.
 
-
-
 Ponadto występują pluginy wspomagające:
 
  - **infrastructure**: uzyskuje informacje o webowych firewallach, systemie operacyjnym oraz http daemon. grep: analizują treść zapytań i odpowiedzi wysyłanych do i z aplikacji, dzięki czemu identyfikują luki bezpieczeństwa.
@@ -25,10 +25,12 @@ Ponadto występują pluginy wspomagające:
 
 Framework może być konfigurowany na 2 poziomach: globalnej konfiguracji oraz konfiguracji pojedynczych pluginów. Konfiguracja może być zapisana i odtworzona w ramach tak zwanego profilu.
 
-###Sposoby prezentacji wyników testów.
+### Sposoby prezentacji wyników testów.
+
 Wyniki mogą być wyświetlane na konsoli, zapisywane w formatach txt, xml, html oraz wysyłane przez e-mail.
 
-###Stopień automatyzacji testów.
+### Stopień automatyzacji testów.
+
 Testy mogą być odpalane z konsoli użytkownika lub z poziomu interfejsu gui. W celu automatyzacji testów w3af wykorzystuje skrypty. Są to pliki tekstowe zawierające w każdej linii jedno wywołanie komendy z w3af-console. Świetnie sprawdzają się przy wykonywaniu okresowych skanów bezpieczeństwa.
 
 ## Instalacja w3af
